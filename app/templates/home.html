@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>A Simple Page with CKEditor</title>
+    <!-- Make sure the path to CKEditor is correct. -->
+    <script src="../static/javascript/ckeditor_4.10.1_standard/ckeditor/ckeditor.js"></script>
+    <script src="../static/javascript/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    标题<input type="text" name="title" id="title">
+    标签<input type="text" name="lable" id="lable">
+    <button id="btn">发布</button>
+
+    <form>
+        <textarea name="editor1" id="editor1" rows="10" cols="80">
+            </textarea>
+        <script>
+            // Replace the <textarea id="editor1"> with a CKEditor
+            // instance, using default configuration.
+            var editor = CKEDITOR.replace('editor1');
+
+            //监听文档变化，然后输出字符数
+            editor.on('change', function (evt) {
+                // getData() returns CKEditor's HTML content.
+                console.log('Total bytes: ' + evt.editor.getData().length);
+            });
+            // editor.height = '500px'
+
+           
+           $("#btn").click(function(){
+               console.log('点击')
+               var title = $("#title").val()
+               var label = $("#lable").val()
+               var data = editor.getData()
+
+               $.ajax({
+                   url:'/api/upload/article',
+                   type:'post',
+                   data:{
+                       title:title,
+                       label:label,
+                       content:data
+                   },
+                   success:function(data){
+                       console.log(data)
+                   },
+                   error:function(err){
+                       console.log(err)
+                   }
+               })
+           })
+
+
+        </script>
+    </form>
+</body>
+
+</html>
