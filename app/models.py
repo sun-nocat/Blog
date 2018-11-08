@@ -15,9 +15,11 @@ class User(models.Model):
     id = models.AutoField(primary_key=True)  # 定义逐渐是Uid并自增
     account = models.CharField(max_length=20, null=False)  # 用户的账号
     name = models.CharField(max_length=20, null=False)  # 用户名
+    password = models.CharField(max_length=15,default='') #密码
     tel = models.CharField(max_length=13,null=True)  # 用户的电话号码
     email = models.EmailField(max_length=20, null=True)  # 用户的邮箱
     address = models.CharField(max_length=30, null=True)  # 用户地址
+    follow = models.CharField(max_length=5000,null=True) #关注列表
     status = models.IntegerField(choices=choice)  # 权限
 
     def __str__(self):

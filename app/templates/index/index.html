@@ -3,8 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <title>主页</title>
+    <script src="../../static/javascript/jquery-3.3.1.min.js"></script>
 </head>
 <body>
+
+<button id="btn1">测试注册接口</button>
+<button id="btn2">测试登录接口</button>
+<button id="btn3">测试清除session</button>
+<a href="/home">发布文章页面</a>
+<a href="/get/articles">文章列表页面</a>
+<a href="/get/article?id=1">文章详情页面</a>
+
+<script>
+    cs_register();
+    cs_login();
+    cs_logout();
+
+
+    function cs_register() {
+        $("#btn1").click(function () {
+            $.ajax({
+                url: "/register",
+                type: "post",
+                data: {
+                    account: '001',
+                    name: "不吃鱼的猫",
+                    tel: "15129572234",
+                    password:"2211smm",
+                    email: 'sun_nocat@163.com',
+                    address: '西安邮电大学'
+                },
+                success: function (data) {
+                    console.log((data))
+                },
+                error: function (err) {
+                    console.log((err))
+
+                }
+
+            })
+        })
+
+    }
+
+
+    function cs_login() {
+        $("#btn2").click(function () {
+            $.ajax({
+                url:"/login",
+                type:'post',
+                data:{
+                    account:'04163075',
+                    password:'2211smm'
+
+                },
+                success:function (data) {
+                    console.log(data)
+                },
+                error:function (err) {
+                    console.log(err)
+                }
+
+            })
+        })
+    }
+
+    function cs_logout() {
+        $("#btn3").click(function () {
+            $.ajax({
+                url:"/logout",
+                type:'get',
+                data:{
+                },
+                success:function (data) {
+                    console.log(data)
+                },
+                error:function (err) {
+                    console.log(err)
+                }
+
+            })
+        })
+    }
+</script>
 
 </body>
 </html>

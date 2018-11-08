@@ -10,24 +10,35 @@ import json
 return index.html
 '''
 def index(request):
+    print(request.session.get('username'))
+    print(request.session.get('account'))
+    print(request.session.get('status'))
+    print(request.session.get('id'))
     return render(request, 'index/index.html') #返回主页面
 
 def home(request):
-    return render(request,'home.html')  #返回文章发布页面
+    if request.session.get('status'): #判断用户是否登录
+        return render(request,'home.html')  #返回文章发布页面
+    else:
+        return HttpResponse('error')
 
 '''
 文章上传接口
+参数：
+title
+label
+content
 '''
 def api_upload_article(request):
-    if request.method == "POST":
+    if request.method == "POST" and request.session.get('status'):
 
         #判断用户是否登录,然后获取用户的姓名
-        name = '孙明明 '
-
         title = request.POST.get('title',None)
         label = request.POST.get('label',None)
         content = request.POST.get('content',None)
-        user = User.objects.get(name=name)
+
+        name = request.session.get('username')
+        user = User.objects.get(id = request.session.get('id'))
 
         models.Article.objects.create(
             time = datetime.datetime.now(),
@@ -37,8 +48,17 @@ def api_upload_article(request):
             content = content,
             user = user
         )
-        return HttpResponse('ok')
-
+        re = json.dumps({
+            "status":"1",
+            "msg":"文章上传成功"
+        })
+        return HttpResponse(re,content_type="application/json;charset=utf-8")
+    else:
+        re = json.dumps({
+            "status":"0",
+            "mag":"文章上传失败"
+        })
+        return HttpResponse(re,content_type="application/json;charset=utf-8")
 
 '''
 文章图片上传的接口
@@ -123,28 +143,83 @@ def register(request):
     if request.method == "POST":
         account = request.POST.get('account',None)
         name = request.POST.get('name',None)
+        password = request.POST.get('password',None)
         tel = request.POST.get('tel',None)
         email = request.POST.get('email',None)
         address = request.POST.get('address',None)
         status = 2 #账户权限，新用户默认为2
-        if(account !=None and name != None):
-            models.User.objects.create(
-                account = account,
-                name = name,
-                tel = tel,
-                email = email,
-                address = address,
-                status = status
-            )
-            print(User.objects.get(account=account))
+        if(account != None and name != None and password != None):
+            if models.User.objects.filter(account=account).exists():
+                re = json.dumps({
+                    "status":"0",
+                    "msg":"账户已经存在"
+                })
+                return HttpResponse(re,content_type="application/json;charset=utf-8")
+            else:
+                models.User.objects.create(
+                    account = account,
+                    name = name,
+                    password = password,
+                    tel = tel,
+                    email = email,
+                    address = address,
+                    status = status
+                )
+                # print(models.User.objects.filter(account=account).exists())
+                ids = models.User.objects.filter(account=account)
+                id = ids[0].id
+                #将用户的信息保存在session中
+                request.session['account'] = account
+                request.session['name'] = name
+                request.session['id'] = id
+                request.session['status'] = status
 
-            re = json.dumps({
-                "status":"1",
-                "mag":"注册成功",
-                # "data":
-            })
-            response = HttpResponse(re,content_type="application/json,charset=utf8")
-            response.set_cookie('')
-            return
+                re = json.dumps({
+                    "status":"1",
+                    "mag":"注册成功"
+                })
+                response = HttpResponse(re,content_type="application/json;charset=utf-8")
+                return response
         else:
             return HttpResponse(json.dumps({"status":"0","msg":"注册失败"}),content_type="application/json,charset=utf8")
+
+'''
+登录接口
+参数
+account
+password
+'''
+def login(request):
+    if request.method == "POST":
+        account = request.POST.get('account',None)
+        password = request.POST.get('password',None)
+        user = models.User.objects.filter(account=account,password=password)
+        print(user)
+        # print(user[0].name)
+        if user:
+            #比较成功，登录成功,设置session
+            request.session['account'] = account
+            request.session['username'] = user[0].name
+            request.session['status'] = user[0].status
+            request.session['id'] = user[0].id
+            re = json.dumps({
+                "status":"1",
+                "msg":"登录成功"
+            })
+            return HttpResponse(re,content_type="application/json;charset=utf-8")
+        else:
+            re = json.dumps({
+                "status":"0",
+                "msg":"用户名或密码错误"
+            })
+            return HttpResponse(re,content_type="application/json;charset=utf-8")
+
+'''
+清除session
+'''
+def logout(request):
+    if request.session.get('status'):
+        request.session.flush()  #清除所有session
+        return HttpResponse(json.dumps({"status":"1","mag":"session清除完成"}),content_type="application/json;charset=utf-8")
+    else:
+        return HttpResponse(json.dumps({"status":"0","mag":"session清除失败"}),content_type="application/json;charset=utf-8")

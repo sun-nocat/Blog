@@ -119,7 +119,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'blog',
         'USER':'root',
-        'PASSWORD':'******',
+        'PASSWORD':'2211smm..',
         'HOST':'127.0.0.1',
         'POST':'3306'
     }
@@ -157,6 +157,15 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+
+#session设置
+
+# SESSION_COOKIE_AGE =
+
+SESSION_SAVE_EVERY_REQUEST =True
+# SESSION_COOKIE_AGE = 60 * 30 #30分钟之后session失效
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True #关闭浏览器，则cookie失效
 
 
 # Static files (CSS, JavaScript, Images)
