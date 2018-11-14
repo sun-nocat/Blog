@@ -7,7 +7,7 @@ import time
 import datetime
 import json
 '''
-return index.html
+return index1.html
 '''
 def index(request):
     print(request.session.get('username'))
@@ -88,12 +88,20 @@ def api_upload_image(request):
 '''
 def get_article_list(request):
     if request.method == "GET":
-        article_list =  models.Article.objects.all().values_list('id','title') #只取id和title，形成一个列表
+        article_list =  models.Article.objects.all().values_list('id','title','commend','time','article_user_name') #只取id和title，形成一个列表
         lists = []
+        print((article_list[0][3]).strftime("%Y-%m-%d %H:%M:%S"))
+        # print(datetime.datetime.strftime(""))
+
+
         for i in range(len(article_list)):
             obj = {}
             obj['id'] = article_list[i][0]
             obj['title'] = article_list[i][1]
+            obj['commend'] = article_list[i][2]
+            obj['time'] = (article_list[i][3]).strftime("%Y-%m-%d %H:%M:%S")
+            obj['article_user_name'] = article_list[i][4]
+
             lists.append(obj)
         re = json.dumps({
             "status":"1",
@@ -223,3 +231,56 @@ def logout(request):
         return HttpResponse(json.dumps({"status":"1","mag":"session清除完成"}),content_type="application/json;charset=utf-8")
     else:
         return HttpResponse(json.dumps({"status":"0","mag":"session清除失败"}),content_type="application/json;charset=utf-8")
+
+'''
+获取分类列表
+返回分类的列表
+'''
+def get_class_list(request):
+    class_list = models.Article.objects.values('label').distinct()
+    print(class_list[0].get('label'))
+    relist =[]
+    for i in range(len(class_list)):
+        relist.append(class_list[i].get('label'))
+    re = json.dumps({
+        "status":"1",
+        "msg":"success",
+        "data":relist
+    })
+
+    return HttpResponse(re,content_type="application/json;charset=utf-8")
+
+'''
+根据分类的标识找到相应的文章标题
+'''
+
+def get_article_list_by_class(request):
+    if request.method == "GET":
+        class_name = request.GET.get('label')
+        article_list =  models.Article.objects.filter(label=class_name).values_list('id','title','commend','time','article_user_name') #只取id和title，形成一个列表
+        lists = []
+        print((article_list[0][3]).strftime("%Y-%m-%d %H:%M:%S"))
+        # print(datetime.datetime.strftime(""))
+
+
+        for i in range(len(article_list)):
+            obj = {}
+            obj['id'] = article_list[i][0]
+            obj['title'] = article_list[i][1]
+            obj['commend'] = article_list[i][2]
+            obj['time'] = (article_list[i][3]).strftime("%Y-%m-%d %H:%M:%S")
+            obj['article_user_name'] = article_list[i][4]
+
+            lists.append(obj)
+        re = json.dumps({
+            "status":"1",
+            "data":lists
+        })
+        return HttpResponse(re,content_type="application/json,charset=utf8")
+
+def detail(request):
+    id = request.GET.get('id')
+    request.COOKIES['id'] = id
+    response = render(request,'index/detail.html')
+
+    return response

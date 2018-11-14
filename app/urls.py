@@ -12,6 +12,9 @@ urlpatterns = [
     url(r'^get/article$',views.get_article),
     url(r'^register$',views.register),
     url(r'^login$',views.login),
-    url(r'^logout$',views.logout)
+    url(r'^logout$',views.logout),
+    url(r'^get/classList$', views.get_class_list),
+    url(r'^get/articlesByClass$',views.get_article_list_by_class),
+    url(r'^detail$',views.detail)
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

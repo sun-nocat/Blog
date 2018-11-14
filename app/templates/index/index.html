@@ -1,91 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>主页</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
     <script src="../../static/javascript/jquery-3.3.1.min.js"></script>
-</head>
-<body>
+    <script src="../../static/javascript/bootstrap/js/bootstrap.js"></script>
+    <link rel="stylesheet" href="../../static/javascript/bootstrap/css/bootstrap.css" />
+    <style>
+      #left {
+        /* background-color: aqua; */
+        position: fixed;
+        width: 15%;
+        height: 100%;
+        background-image: url("../../static/img/blog_leftbanner.jpg");
+        background-size: cover;
+      }
 
-<button id="btn1">测试注册接口</button>
-<button id="btn2">测试登录接口</button>
-<button id="btn3">测试清除session</button>
-<a href="/home">发布文章页面</a>
-<a href="/get/articles">文章列表页面</a>
-<a href="/get/article?id=1">文章详情页面</a>
+      #right {
+        margin-left: 15%;
+        /* background-color: aquamarine; */
+      }
 
-<script>
-    cs_register();
-    cs_login();
-    cs_logout();
+      a {
+        /* color: aliceblue; */
+      }
+
+      #left p {
+        text-align: center;
+        margin-top: 20px;
+        font-weight: 600;
+      }
+
+      li {
+        list-style: none;
+      }
+
+      .nav-list li {
+        font-size: 15px;
+        margin-left: -20px;
+        /* text-align: center; */
+      }
+
+      #title {
+        display: none;
+      }
+
+      #logo {
+        width: 100px;
+        height: 100px;
+      }
+      .lis {
+        text-align: center;
+        color: white;
+        cursor: pointer;
+      }
+      .cell {
+        position: relative;
+        overflow: hidden;
+        border-top: 1px solid #f0f0f0;
+        height: 50px;
+        line-height: 50px;
+      }
+      .cell-title {
+        font-size: 20px;
+      }
+      .cell-end {
+        float: right;
+        font-size: 16px;
+      }
+
+      /*媒体查询*/
+      @media screen and (max-width: 800px) {
+        #left {
+          background-color: rgb(0, 38, 255);
+          position: fixed;
+          width: 100%;
+          height: 20%;
+        }
+
+        #right {
+          /* margin-left:20%; 
+        background-color: aquamarine; */
+          display: none;
+        }
+
+        #title {
+          display: block;
+          position: fixed;
+          height: 50px;
+          width: 100%;
+          background-color: #666;
+          z-index: 2;
+        }
+        #display {
+          display: none;
+        }
+
+        #logo {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- web端页面 -->
+    <div class="container-fluid">
+      <div class="row">
+        <!-- 左侧的固定导航栏 -->
+        <div class="col-sm-2" id="left">
+          <p>sun_nocat</p>
+          <!-- 头像 -->
+          <div style="text-align: center;">
+            <img id="logo" src="../../static/img/logo.jpg" alt="头像" class="img-circle" />
+          </div>
+          <!-- 登录注册按钮 -->
+          <div style="text-align: center; margin-bottom: 20px;">
+            <hr />
+            <a href="" style="font-size: 25px;">登录</a> <br />
+            <a href="" style="font-size: 25px;">注册</a> <br />
+          </div>
+          <!-- 文章分类部分 -->
+          <div>
+            <div style="font-size: 18px; margin-left: 15px;">
+              文章分类<span class="caret"></span>
+            </div>
+            <ul class="nav-list" id="nav-list"></ul>
+          </div>
+        </div>
+
+        <!-- 中间内容展示区域 -->
+        <div class="col-sm-10" id="right">
+          <!-- <div class="cell">
+            <div>
+              <a href="" class="cell-title">dqwdqwdqw</a>
+              <span class="cell-end">skdldjkqdq</span>
+            </div>
+          </div>
+
+          <div class="cell">
+            <div>
+              <a href="" class="cell-title">dqwdqwdqw</a>
+              <span class="cell-end">skdldjkqdq</span>
+            </div>
+          </div>
 
 
-    function cs_register() {
-        $("#btn1").click(function () {
-            $.ajax({
-                url: "/register",
-                type: "post",
-                data: {
-                    account: '001',
-                    name: "不吃鱼的猫",
-                    tel: "15129572234",
-                    password:"2211smm",
-                    email: 'sun_nocat@163.com',
-                    address: '西安邮电大学'
-                },
-                success: function (data) {
-                    console.log((data))
-                },
-                error: function (err) {
-                    console.log((err))
+          <div class="cell">
+            <div>
+              <a href="" class="cell-title">dqwdqwdqw</a>
+              <span class="cell-end">skdldjkqdq</span>
+            </div>
+          </div> -->
 
-                }
+        </div>
+      </div>
+    </div>
 
-            })
-        })
+    <script>
+      get_articles();
+      get_class_list();
+      get_allAritle()
+      //获取文章列表
+      function get_articles() {
+        $.ajax({
+          url: "http://127.0.0.1:8000/get/articles",
+          type: "get",
+          success: function(data) {
+            console.log(data);
+          },
+          error: function(err) {
+            console.log(err);
+          }
+        });
+      }
 
-    }
+      function get_class_list() {
+        $.ajax({
+          url: "http://127.0.0.1:8000/get/classList",
+          type: "get",
+          success: function(data) {
+            console.log(data);
+
+            var ul = $("#nav-list");
+            console.log(ul);
+            for (i = 0; i < data.data.length; i++) {
+              var li = $(`<li class="lis"></li>`).text(data.data[i]);
+              li.click(function(e) {
+                console.log(e.target.innerHTML);
+                //清空子节点
+                getAritle(e.target.innerHTML);
+              });
+
+              ul.append(li);
+            }
+          },
+          error: function(err) {
+            console.log(err);
+          }
+        });
+      }
+
+      function getAritle(label) {
+        $.ajax({
+          url: "http://127.0.0.1:8000/get/articlesByClass",
+          type: "get",
+          data: {
+            label: label
+          },
+          success: function(data) {
+            console.log(data);
+            $("#right").empty();
 
 
-    function cs_login() {
-        $("#btn2").click(function () {
-            $.ajax({
-                url:"/login",
-                type:'post',
-                data:{
-                    account:'04163075',
-                    password:'2211smm'
+            for (i = 0; i < data.data.length; i++) {
 
-                },
-                success:function (data) {
-                    console.log(data)
-                },
-                error:function (err) {
-                    console.log(err)
-                }
+              var cell = $(`<div class="cell">
+                    <div>
+                      <a href="detail?id=${data.data[i].id}" class="cell-title">${data.data[i].title}</a>
+                      <span  class="cell-end">${data.data[i].time}</span>
+                    </div>
+                  </div>`);
+              $("#right").append(cell);
+            }
+          },
+          error: function(err) {
+            console.log(err);
+          }
+        });
+      }
 
-            })
-        })
-    }
+      function get_allAritle() {
+        $.ajax({
+          url: "http://127.0.0.1:8000/get/articles",
+          type: "get",
 
-    function cs_logout() {
-        $("#btn3").click(function () {
-            $.ajax({
-                url:"/logout",
-                type:'get',
-                data:{
-                },
-                success:function (data) {
-                    console.log(data)
-                },
-                error:function (err) {
-                    console.log(err)
-                }
+          success: function(data) {
+            console.log(data);
+            $("#right").empty();
 
-            })
-        })
-    }
-</script>
 
-</body>
+            for (i = 0; i < data.data.length; i++) {
+
+              var cell = $(`<div class="cell">
+                    <div>
+                      <a href="detail?id=${data.data[i].id}" class="cell-title">${data.data[i].title}</a>
+                      <span  class="cell-end">${data.data[i].time}</span>
+                    </div>
+                  </div>`);
+              $("#right").append(cell);
+            }
+          },
+          error: function(err) {
+            console.log(err);
+          }
+        });
+      }
+
+    </script>
+  </body>
 </html>
