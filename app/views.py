@@ -282,5 +282,5 @@ def detail(request):
     id = request.GET.get('id')
     request.COOKIES['id'] = id
     response = render(request,'index/detail.html')
-
+    response.set_cookie('id',id)
     return response
