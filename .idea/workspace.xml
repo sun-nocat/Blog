@@ -2,11 +2,73 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c19e9ca6-b1b4-4df7-9d2b-e12cc36f0711" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/img/blog_leftbanner.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/img/logo.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/index/detail.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/index/index1.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/img/btn.jpg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/css/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/css/index.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/Guardfile" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/README.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/bower.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/demo/advanced.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/demo/colors.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/demo/demo.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/demo/horizontal-submenus.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/demo/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/demo/jqmobile/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/demo/jqmobile/page3.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/demo/onepage.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/demo/photos.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/demo/positions.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/demo/vertical-submenus.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/mmenu.jquery.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/css/addons/jquery.mmenu.counters.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/css/addons/jquery.mmenu.dragopen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/css/addons/jquery.mmenu.header.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/css/addons/jquery.mmenu.labels.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/css/addons/jquery.mmenu.searchfield.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/css/extensions/jquery.mmenu.effects.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/css/extensions/jquery.mmenu.fullscreen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/css/extensions/jquery.mmenu.ie8.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/css/extensions/jquery.mmenu.positioning.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/css/extensions/jquery.mmenu.themes.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/css/extensions/jquery.mmenu.widescreen.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/css/jquery.mmenu.all.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/css/jquery.mmenu.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/js/addons/jquery.mmenu.counters.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/js/addons/jquery.mmenu.counters.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/js/addons/jquery.mmenu.dragopen.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/js/addons/jquery.mmenu.dragopen.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/js/addons/jquery.mmenu.header.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/js/addons/jquery.mmenu.header.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/js/addons/jquery.mmenu.labels.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/js/addons/jquery.mmenu.labels.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/js/addons/jquery.mmenu.searchfield.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/js/addons/jquery.mmenu.searchfield.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/js/jquery.mmenu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/js/jquery.mmenu.min.all.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/js/jquery.mmenu.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/scss/addons/jquery.mmenu.counters.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/scss/addons/jquery.mmenu.dragopen.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/scss/addons/jquery.mmenu.header.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/scss/addons/jquery.mmenu.labels.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/scss/addons/jquery.mmenu.searchfield.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/scss/extensions/jquery.mmenu.effects.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/scss/extensions/jquery.mmenu.fullscreen.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/scss/extensions/jquery.mmenu.ie8.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/scss/extensions/jquery.mmenu.positioning.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/scss/extensions/jquery.mmenu.themes.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/scss/extensions/jquery.mmenu.widescreen.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/scss/inc/_arrows.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/scss/inc/_colors.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/scss/inc/_sizing.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/scss/inc/_variables.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/scss/jquery.mmenu.all.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/scss/jquery.mmenu.scss" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/templates/index/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/home.html" afterPath="$PROJECT_DIR$/app/templates/home.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/templates/index/index.html" afterPath="$PROJECT_DIR$/app/templates/index/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/urls.py" afterPath="$PROJECT_DIR$/app/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views.py" afterPath="$PROJECT_DIR$/app/views.py" />
@@ -44,95 +106,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="index1.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/index/index1.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="5" column="60" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="60" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/index/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="249" column="45" lean-forward="false" selection-start-line="249" selection-start-column="45" selection-end-line="249" selection-end-column="45" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Blog/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="53">
-              <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="blog_leftbanner.jpg" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/static/img/blog_leftbanner.jpg">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app_article" pinned="false" current-in-tab="false">
-        <entry file="das://table:/85bad08e/0cefa9cd-9288-4c5c-923e-bb0d3102ad42/blog.app_article">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app_user" pinned="false" current-in-tab="false">
-        <entry file="das://table:/85bad08e/0cefa9cd-9288-4c5c-923e-bb0d3102ad42/blog.app_user">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/templates/home.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="29">
-              <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="539">
-              <caret line="281" column="30" lean-forward="false" selection-start-line="281" selection-start-column="30" selection-end-line="281" selection-end-column="30" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-                <element signature="e#689#1624#0" expanded="false" />
-                <element signature="e#1679#2152#0" expanded="false" />
-                <element signature="e#2229#3058#0" expanded="false" />
-                <element signature="e#4001#5809#0" expanded="false" />
-                <element signature="e#6818#7151#0" expanded="false" />
-                <element signature="e#7209#7584#0" expanded="false" />
-                <element signature="e#7656#8550#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/templates/index/detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="116">
-              <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+              <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -141,8 +119,40 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+            <state relative-caret-position="406">
+              <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="30" />
+              <folding>
+                <element signature="e#17#58#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="272" column="31" lean-forward="true" selection-start-line="272" selection-start-column="31" selection-end-line="272" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/index/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/templates/index/detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="261">
+              <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -154,11 +164,21 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Python Script" />
+        <option value="CSS File" />
         <option value="HTML File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>login</find>
+      <find>lis</find>
+      <find>1234323</find>
+      <find>cell</find>
+      <find>clickArt</find>
+      <find>sm_get_allAritle</find>
+      <find>headerTitle</find>
+    </findStrings>
     <dirStrings>
       <dir>E:\code\博客\Blog</dir>
     </dirStrings>
@@ -172,27 +192,37 @@
         <option value="$PROJECT_DIR$/Blog/urls.py" />
         <option value="$PROJECT_DIR$/app/__init__.py" />
         <option value="$PROJECT_DIR$/app/admin.py" />
-        <option value="$PROJECT_DIR$/app/templates/home.html" />
         <option value="$PROJECT_DIR$/app/static/javascript/ckeditor_4.10.1_standard/ckeditor/config.js" />
         <option value="$PROJECT_DIR$/app/models.py" />
         <option value="$PROJECT_DIR$/Blog/settings.py" />
         <option value="$PROJECT_DIR$/app/templates/index/detail.html" />
-        <option value="$PROJECT_DIR$/app/templates/index/index.html" />
         <option value="$PROJECT_DIR$/app/urls.py" />
+        <option value="$PROJECT_DIR$/app/templates/home.html" />
+        <option value="$PROJECT_DIR$/app/templates/index/login.html" />
+        <option value="$PROJECT_DIR$/app/static/css/index.css" />
+        <option value="$PROJECT_DIR$/app/templates/index/index.html" />
         <option value="$PROJECT_DIR$/app/views.py" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <annotation-enable>false</annotation-enable>
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="960" />
-    <option name="width" value="960" />
-    <option name="height" value="1032" />
+    <option name="x" value="-1184" />
+    <option name="y" value="-9" />
+    <option name="width" value="781" />
+    <option name="height" value="830" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -227,19 +257,6 @@
               <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="Blog" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Blog" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -268,16 +285,23 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/新建文件夹/zypc" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL&#10;Sqlite (Xerial)" />
+    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="JavaScriptPreferStrict" value="false" />
+    <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\博客\Blog\app\static\javascript\FrDH-jQuery.mmenu-v4.1.7-0-g072d026\FrDH-jQuery.mmenu-2281f1e\src\css" />
+      <recent name="E:\code\博客\Blog\app\static\javascript" />
       <recent name="E:\code\博客\Blog\app\static" />
       <recent name="E:\code\博客\Blog\app\templates\index" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\code\博客\Blog\app\static\img" />
       <recent name="E:\code\博客\Blog\app" />
       <recent name="E:\code\博客\Blog\app\templates" />
     </key>
@@ -322,6 +346,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="c19e9ca6-b1b4-4df7-9d2b-e12cc36f0711" name="Default" comment="" />
@@ -342,20 +369,20 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <frame x="-1449" y="-9" width="1458" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26734105" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.384009" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.34248555" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.6385135" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3476298" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5880361" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988507" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3347339" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22747748" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299356" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -363,6 +390,7 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995495" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32988507" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -379,47 +407,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1392">
-          <caret line="48" column="3" lean-forward="true" selection-start-line="48" selection-start-column="3" selection-end-line="48" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#689#1624#0" expanded="false" />
-            <element signature="e#1679#2152#0" expanded="false" />
-            <element signature="e#2229#3058#0" expanded="false" />
-            <element signature="e#4001#5809#0" expanded="false" />
-            <element signature="e#6818#7151#0" expanded="false" />
-            <element signature="e#7209#7584#0" expanded="false" />
-            <element signature="e#7656#8550#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Blog/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="609">
-          <caret line="21" column="27" lean-forward="false" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Blog/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2349">
@@ -432,7 +419,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
           <caret line="594" column="8" lean-forward="false" selection-start-line="594" selection-start-column="8" selection-end-line="594" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -483,7 +469,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="58">
           <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -565,13 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="7" column="35" lean-forward="false" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/tests.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -579,27 +557,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Blog/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4379">
-          <caret line="151" column="0" lean-forward="false" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="37" column="9" lean-forward="false" selection-start-line="37" selection-start-column="4" selection-end-line="37" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36-32/Lib/site-packages/django/db/models/query.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="694" column="8" lean-forward="false" selection-start-line="694" selection-start-column="8" selection-end-line="694" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -607,22 +568,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
           <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="29">
-          <caret line="34" column="31" lean-forward="false" selection-start-line="34" selection-start-column="31" selection-end-line="34" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://table:/85bad08e/0cefa9cd-9288-4c5c-923e-bb0d3102ad42/blog.app_article">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
@@ -633,9 +578,35 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/js/addons/jquery.mmenu.header.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/static/img/logo.jpg">
       <provider selected="true" editor-type-id="images">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/index/index1.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="6" column="7" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/img/btn.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/static/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2610">
+          <caret line="90" column="0" lean-forward="false" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/static/img/blog_leftbanner.jpg">
@@ -643,25 +614,65 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/index/detail.html">
+    <entry file="file://$PROJECT_DIR$/app/templates/index/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+        <state relative-caret-position="261">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/index/index1.html">
+    <entry file="file://$PROJECT_DIR$/app/templates/index/detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="261">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/index/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6177">
+          <caret line="221" column="0" lean-forward="false" selection-start-line="221" selection-start-column="0" selection-end-line="221" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="30" column="3" lean-forward="false" selection-start-line="30" selection-start-column="3" selection-end-line="30" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="140" column="6" lean-forward="false" selection-start-line="140" selection-start-column="6" selection-end-line="140" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="145">
-          <caret line="5" column="60" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="60" />
+          <caret line="8" column="40" lean-forward="false" selection-start-line="8" selection-start-column="40" selection-end-line="8" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/templates/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="9" column="7" lean-forward="false" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Blog/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53">
+        <state relative-caret-position="197">
           <caret line="13" column="31" lean-forward="false" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
           <folding />
         </state>
@@ -669,34 +680,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="17" column="32" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="406">
+          <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="11" selection-end-line="17" selection-end-column="30" />
+          <folding>
+            <element signature="e#17#58#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/templates/index/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="249" column="45" lean-forward="false" selection-start-line="249" selection-start-column="45" selection-end-line="249" selection-end-column="45" />
-          <folding />
+    <entry file="das://table:/85bad08e/0cefa9cd-9288-4c5c-923e-bb0d3102ad42/blog.app_article">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="539">
-          <caret line="281" column="30" lean-forward="false" selection-start-line="281" selection-start-column="30" selection-end-line="281" selection-end-column="30" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#689#1624#0" expanded="false" />
-            <element signature="e#1679#2152#0" expanded="false" />
-            <element signature="e#2229#3058#0" expanded="false" />
-            <element signature="e#4001#5809#0" expanded="false" />
-            <element signature="e#6818#7151#0" expanded="false" />
-            <element signature="e#7209#7584#0" expanded="false" />
-            <element signature="e#7656#8550#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="290">
+          <caret line="272" column="31" lean-forward="true" selection-start-line="272" selection-start-column="31" selection-end-line="272" selection-end-column="31" />
+          <folding />
         </state>
       </provider>
     </entry>

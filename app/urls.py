@@ -5,6 +5,7 @@ from django.conf.urls.static import static
 from django.conf import settings
 urlpatterns = [
     url(r'^$', views.index), #
+    url(r'^loginPage$',views.loginPage),
     url(r'^api/upload/article',views.api_upload_article), #文章上传
     url(r'^api/upload/image',views.api_upload_image),
     url(r'^home$',views.home),

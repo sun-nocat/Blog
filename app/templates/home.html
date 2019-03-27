@@ -15,7 +15,7 @@
     <button id="btn">发布</button>
 
     <form>
-        <textarea name="editor1" id="editor1" rows="10" cols="80">
+        <textarea name="editor1" id="editor1" rows="10" cols="80" >
             </textarea>
         <script>
             // Replace the <textarea id="editor1"> with a CKEditor
@@ -27,7 +27,7 @@
                 // getData() returns CKEditor's HTML content.
                 console.log('Total bytes: ' + evt.editor.getData().length);
             });
-            // editor.height = '500px'
+            editor.width = '500px'
 
            
            $("#btn").click(function(){

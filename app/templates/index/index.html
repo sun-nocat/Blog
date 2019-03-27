@@ -1,267 +1,420 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8"/>
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+            name="viewport"
+            content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
     />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>不吃鱼的猫|BLOG</title>
     <script src="../../static/javascript/jquery-3.3.1.min.js"></script>
     <script src="../../static/javascript/bootstrap/js/bootstrap.js"></script>
-    <link rel="stylesheet" href="../../static/javascript/bootstrap/css/bootstrap.css" />
-    <style>
-      #left {
-        /* background-color: aqua; */
-        position: fixed;
-        width: 15%;
-        height: 100%;
-        background-image: url("../../static/img/blog_leftbanner.jpg");
-        background-size: cover;
-      }
+    <link rel="stylesheet"
+          href="../../static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/css/jquery.mmenu.all.css">
 
-      #right {
-        margin-left: 15%;
-        /* background-color: aquamarine; */
-      }
+    <script src="../../static/javascript/FrDH-jQuery.mmenu-v4.1.7-0-g072d026/FrDH-jQuery.mmenu-2281f1e/src/js/jquery.mmenu.js"></script>
+    <link rel="stylesheet" href="../../static/javascript/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../../static/css/index.css">
+</head>
 
-      a {
-        /* color: aliceblue; */
-      }
 
-      #left p {
-        text-align: center;
-        margin-top: 20px;
-        font-weight: 600;
-      }
+<!-- 菜单 -->
+{#<nav id="menu">#}
+{#   <ul>#}
+{#      <li><a href="/">Home</a></li>#}
+{#      <li><a href="/about">About us</a>#}
+{#         <ul>#}
+{#            <li><a href="/about/history">History</a></li>#}
+{#            <li><a href="/about/team">The team</a></li>#}
+{#         </ul>#}
+{#      </li>#}
+{#   </ul>#}
+{#</nav>#}
+{#  移动端页面#}
+<div id="mobile">
 
-      li {
-        list-style: none;
-      }
+    {#    页面顶部#}
+    <div id="header" style="position: fixed; background-color: #323436; display: inline-block;width: 100%;height: 50px;overflow: hidden">
+        <a href="#nav" style=" position: relative;top: 20px;" onclick="(function() {
+            console.log(document.getElementById('nav'));
+         document.getElementById('nav').style.visibility='visible'
+        })()"><img src="../../static/img/btn.jpg" alt="" style="    position: relative;
+    top: -13px;
+    left: 5px;"></a>
+        <div style="text-align: center;margin-top: -16px; color: white" id="headerTitle" onclick="(function(e) {
+{#          console.log(document.getElementById('headerTitle').innerText)#}
+          if(document.getElementById('headerTitle').innerText == '最近文章'){
+              sm_get_allAritle()
+          }else {
+                        sm_getAritle(document.getElementById('headerTitle').innerText)
 
-      .nav-list li {
-        font-size: 15px;
-        margin-left: -20px;
-        /* text-align: center; */
-      }
+          }
+        })()"> 最近文章</div>
+{#        <a href="#" style="text-align: center" col>文章</a>#}
+        <a href="#" style="position: absolute;top: 20px;right: 50px;display: block;height: 29px;"><img class="img-circle" src="../../static/img/logo.jpg" alt="" style="width: 40px;height: 40px;position: absolute;top: -14px;" onclick="(function() {
+            sm_get_allAritle()
 
-      #title {
-        display: none;
-      }
+        })()"></a>
+    </div>
 
-      #logo {
-        width: 100px;
-        height: 100px;
-      }
-      .lis {
-        text-align: center;
-        color: white;
-        cursor: pointer;
-      }
-      .cell {
-        position: relative;
-        overflow: hidden;
-        border-top: 1px solid #f0f0f0;
-        height: 50px;
-        line-height: 50px;
-      }
-      .cell-title {
-        font-size: 20px;
-      }
-      .cell-end {
-        float: right;
-        font-size: 16px;
-      }
+    {#    //左侧抽屉中的内容#}
+    <div id="nav" style="visibility: hidden">
 
-      /*媒体查询*/
-      @media screen and (max-width: 800px) {
-        #left {
-          background-color: rgb(0, 38, 255);
-          position: fixed;
-          width: 100%;
-          height: 20%;
-        }
+        <div>
+            <img src="../../static/img/logo.jpg" alt="" style="width: 100px;height: 100px; margin-left: 75px;"
+                 class="img-circle">
+            <div style="text-align: center">
+                <hr/>
+                <a href="#loginPage"
+                   style="display: inline-block;border-radius: 5px; background-color: slategrey; width: 100%; font-size: 25px; color: #fff;cursor: pointer; text-decoration: none;list-style-type: none"
+                   id="loginBtns">登录</a><br/>
+                <ul id="sm-nav-ul">
+                    <li><a href="#" id="aa"></a></li>
+                </ul><footer id="footer"
+                        style="text-align: center; color:#aaa; font-size: 10px;bottom: 25px;">
+                    @2018- 不吃鱼的猫- 个人博客
+                    <br>
+                    陕ICP备18020208号-1
+                </footer>
+            </div>
 
-        #right {
-          /* margin-left:20%; 
-        background-color: aquamarine; */
-          display: none;
-        }
 
-        #title {
-          display: block;
-          position: fixed;
-          height: 50px;
-          width: 100%;
-          background-color: #666;
-          z-index: 2;
-        }
-        #display {
-          display: none;
-        }
+        </div>
 
-        #logo {
-          display: none;
-        }
-      }
-    </style>
-  </head>
+    </div>
 
-  <body>
-    <!-- web端页面 -->
-    <div class="container-fluid">
-      <div class="row">
+    {#    右侧内容#}
+    <div class="container-fluid" id="center" style="padding-top: 50px; ">
+
+    </div>
+
+
+
+</div>
+
+
+<!-- web端页面 -->
+<div class="container-fluid" id="web">
+
+    <div class="row">
         <!-- 左侧的固定导航栏 -->
         <div class="col-sm-2" id="left">
-          <p>sun_nocat</p>
-          <!-- 头像 -->
-          <div style="text-align: center;">
-            <img id="logo" src="../../static/img/logo.jpg" alt="头像" class="img-circle" />
-          </div>
-          <!-- 登录注册按钮 -->
-          <div style="text-align: center; margin-bottom: 20px;">
-            <hr />
-            <a href="" style="font-size: 25px;">登录</a> <br />
-            <a href="" style="font-size: 25px;">注册</a> <br />
-          </div>
-          <!-- 文章分类部分 -->
-          <div>
-            <div style="font-size: 18px; margin-left: 15px;">
-              文章分类<span class="caret"></span>
+            <p style="overflow: hidden;cursor: pointer;" onclick="(function () {
+            location.href='/'
+          })()">sun_nocat</p>
+            <!-- 头像 -->
+            <div style="text-align: center;">
+                <img id="logo" src="../../static/img/logo.jpg" alt="头像" class="img-circle"/>
             </div>
-            <ul class="nav-list" id="nav-list"></ul>
-          </div>
+            <!-- 登录注册按钮 -->
+            <div style="text-align: center; margin-bottom: 20px;">
+                <hr/>
+                <a href="loginPage"
+                   style="font-size: 25px; color: #fff;cursor: pointer; text-decoration: none;list-style-type: none"
+                   id="loginBtns">登录</a> <br/>
+            </div>
+            <!-- 文章分类部分 -->
+            <div>
+                <div style="font-size: 18px;border-left: 1px solid #777;padding-left: 20px;">
+                    文章分类
+                </div>
+                <ul class="nav-list" id="nav-list"></ul>
+                {#              <div style="font-size: 18px;border-left: 1px solid #777;padding-left: 20px;">#}
+                {#                文章分类#}
+                {#              </div>#}
+                <footer id="footer"
+                        style="text-align: center; color:#aaa; font-size: 10px;position: fixed;bottom: 25px;">
+                    @2018- 不吃鱼的猫- 个人博客
+                    <br>
+                    陕ICP备18020208号-1
+                </footer>
+            </div>
         </div>
 
         <!-- 中间内容展示区域 -->
         <div class="col-sm-10" id="right">
-          <!-- <div class="cell">
-            <div>
-              <a href="" class="cell-title">dqwdqwdqw</a>
-              <span class="cell-end">skdldjkqdq</span>
+            <!-- <div class="cell">
+              <div>
+                <a href="" class="cell-title">dqwdqwdqw</a>
+                <span class="cell-end">skdldjkqdq</span>
+              </div>
             </div>
-          </div>
 
-          <div class="cell">
-            <div>
-              <a href="" class="cell-title">dqwdqwdqw</a>
-              <span class="cell-end">skdldjkqdq</span>
+            <div class="cell">
+              <div>
+                <a href="" class="cell-title">dqwdqwdqw</a>
+                <span class="cell-end">skdldjkqdq</span>
+              </div>
             </div>
-          </div>
 
 
-          <div class="cell">
-            <div>
-              <a href="" class="cell-title">dqwdqwdqw</a>
-              <span class="cell-end">skdldjkqdq</span>
-            </div>
-          </div> -->
+            <div class="cell">
+              <div>
+                <a href="" class="cell-title">dqwdqwdqw</a>
+                <span class="cell-end">skdldjkqdq</span>
+              </div>
+            </div> -->
+
 
         </div>
-      </div>
     </div>
+</div>
 
-    <script>
-      get_articles();
-      get_class_list();
-      get_allAritle()
-      //获取文章列表
-      function get_articles() {
+
+<script>
+
+    //mmenu插件
+    $(function () {
+        $("#nav").mmenu();
+    });
+    //获取设备的宽度
+    var windowWith = $(window).width();
+
+    //在电脑屏幕下
+    if (windowWith > 1000) {
+        get_articles();
+        get_class_list();
+        get_allAritle();
+        loginBtns();
+    } else {
+        //屏幕在手机上
+        sm_get_class_list()
+sm_get_allAritle()
+    }
+
+
+    console.log($(window).width());
+
+    //获取文章列表
+    function get_articles() {
         $.ajax({
-          url: "http://127.0.0.1:8000/get/articles",
-          type: "get",
-          success: function(data) {
-            console.log(data);
-          },
-          error: function(err) {
-            console.log(err);
-          }
-        });
-      }
-
-      function get_class_list() {
-        $.ajax({
-          url: "http://127.0.0.1:8000/get/classList",
-          type: "get",
-          success: function(data) {
-            console.log(data);
-
-            var ul = $("#nav-list");
-            console.log(ul);
-            for (i = 0; i < data.data.length; i++) {
-              var li = $(`<li class="lis"></li>`).text(data.data[i]);
-              li.click(function(e) {
-                console.log(e.target.innerHTML);
-                //清空子节点
-                getAritle(e.target.innerHTML);
-              });
-
-              ul.append(li);
+            url: "http://127.0.0.1:8000/get/articles",
+            type: "get",
+            success: function (data) {
+                console.log(data);
+            },
+            error: function (err) {
+                console.log(err);
             }
-          },
-          error: function(err) {
-            console.log(err);
-          }
         });
-      }
+    }
 
-      function getAritle(label) {
+    //文章分类的列表
+    function get_class_list() {
         $.ajax({
-          url: "http://127.0.0.1:8000/get/articlesByClass",
-          type: "get",
-          data: {
-            label: label
-          },
-          success: function(data) {
-            console.log(data);
-            $("#right").empty();
+            url: "http://127.0.0.1:8000/get/classList",
+            type: "get",
+            success: function (data) {
+                console.log(data);
+
+                var ul = $("#nav-list");
+                console.log(ul);
+                for (i = 0; i < data.data.length; i++) {
+                    var li = $(`<li class="lis glyphicon glyphicon-tag;"></li><br>`).text(data.data[i]);
+                    li.click(function (e) {
+                        console.log(e.target.innerHTML);
+                        //清空子节点
+
+                        getAritle(e.target.innerHTML);
+
+                    });
+
+                    ul.append(li);
+                }
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        });
+    }
+
+    //获取指定分类的文章列表
+    function getAritle(label) {
+
+        $.ajax({
+            url: "http://127.0.0.1:8000/get/articlesByClass",
+            type: "get",
+            data: {
+                label: label
+            },
+            success: function (data) {
+                console.log(data);
+                $("#right").empty();
 
 
-            for (i = 0; i < data.data.length; i++) {
+                for (i = 0; i < data.data.length; i++) {
 
-              var cell = $(`<div class="cell">
+                    var cell = $(`<div class="cell">
                     <div>
-                      <a href="detail?id=${data.data[i].id}" class="cell-title">${data.data[i].title}</a>
+                      <p onclick="clickArt(${data.data[i].id})" class="cell-title">${data.data[i].title}</p>
+                      <span  class="cell-end">${data.data[i].time}</span>
+                      <span>${data.data[i].commend}</span>
+                    </div>
+                  </div>`);
+                    $("#right").append(cell);
+                }
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        });
+    }
+
+    //获取所有文章的列表
+    function get_allAritle() {
+        $.ajax({
+            url: "http://127.0.0.1:8000/get/articles",
+            type: "get",
+
+            success: function (data) {
+                console.log(data);
+                $("#right").empty();
+
+
+                for (i = 0; i < data.data.length; i++) {
+
+                    var cell = $(`<div class="cell">
+                    <div>
+                      <p onclick="clickArt(${data.data[i].id})" class="cell-title">${data.data[i].title}</p>
                       <span  class="cell-end">${data.data[i].time}</span>
                     </div>
                   </div>`);
-              $("#right").append(cell);
+                    $("#right").append(cell);
+                }
+            },
+            error: function (err) {
+                console.log(err);
             }
-          },
-          error: function(err) {
-            console.log(err);
-          }
         });
-      }
+    }
 
-      function get_allAritle() {
+    //点击文章标题的事件
+    //参数 id 是文章的主键
+    function clickArt(id) {
+        console.log(id);
+        {#          document.getElementById("right").style.display="None";#}
+        $("#right").empty()
         $.ajax({
-          url: "http://127.0.0.1:8000/get/articles",
-          type: "get",
+            url: "/get/article",
+            type: 'get',
+            data: {
+                id: id
+            },
+            success: function (data) {
+                console.log(data)
+                let content = data.data[0].content;
+                console.log(content)
 
-          success: function(data) {
-            console.log(data);
-            $("#right").empty();
+                $("#center").html(content)
+            },
+            error: function (err) {
+                console.log(err)
+            }
+        })
+
+    }
 
 
-            for (i = 0; i < data.data.length; i++) {
+    //移动端
+    //文章分类的列表
+    function sm_get_class_list() {
+        $.ajax({
+            url: "http://127.0.0.1:8000/get/classList",
+            type: "get",
+            success: function (data) {
+                console.log(data);
 
-              var cell = $(`<div class="cell">
-                    <div>
-                      <a href="detail?id=${data.data[i].id}" class="cell-title">${data.data[i].title}</a>
-                      <span  class="cell-end">${data.data[i].time}</span>
+                var ul = $("#sm-nav-ul");
+                console.log(ul);
+                for (i = 0; i < data.data.length; i++) {
+                    var a = $(`<a href="#"></a>`).text(data.data[i]);
+                    var li = $(`<li></li>`).html(a)
+                    li.click(function (e) {
+                        console.log(e.target.innerHTML);
+                        //清空子节点
+                        sm_getAritle(e.target.innerHTML);
+                         document.getElementById("aa").click()
+                    });
+
+                    ul.append(li);
+                }
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        });
+    }
+
+    //获取指定分类的文章列表
+    function sm_getAritle(label) {
+        $.ajax({
+            url: "http://127.0.0.1:8000/get/articlesByClass",
+            type: "get",
+            data: {
+                label: label
+            },
+            success: function (data) {
+                console.log(data);
+                $("#center").empty();
+
+                $("#headerTitle").text(label)
+
+                for (i = 0; i < data.data.length; i++) {
+
+                    var cell = $(`<div class="sm_cell">
+                    <div style="margin-top:5px;border-radius: 5px;background-color: #ddd;    padding-left: 10px;">
+                      <p onclick="clickArt(${data.data[i].id})" class="sm_cell-title" style="font-size:20px;">${data.data[i].title}</p>
+                      <span  class="cell-end" style="font-size: small">${data.data[i].time}</span>
+                      <span style="font-size: small; margin-left: 110px;">阅读量：${data.data[i].commend}</span>
                     </div>
                   </div>`);
-              $("#right").append(cell);
+                    $("#center").append(cell);
+                }
+            },
+            error: function (err) {
+                console.log(err);
             }
-          },
-          error: function(err) {
-            console.log(err);
-          }
         });
-      }
+    }
 
-    </script>
-  </body>
+        //获取所有文章的列表
+    function sm_get_allAritle() {
+        $.ajax({
+            url: "http://127.0.0.1:8000/get/articles",
+            type: "get",
+
+            success: function (data) {
+                console.log(data);
+                $("#center").empty();
+                $("#headerTitle").text('最近文章')
+
+                for (i = 0; i < data.data.length; i++) {
+
+                    var cell = $(`<div class="sm_cell">
+                     <div style="margin-top:5px;border-radius: 5px;background-color: #ddd;    padding-left: 10px;">
+                      <p onclick="clickArt(${data.data[i].id})" class="sm_cell-title" style="font-size:20px;">${data.data[i].title}</p>
+                      <span  class="cell-end" style="font-size: small">${data.data[i].time}</span>
+                      <span style="font-size: small; margin-left: 110px;">阅读量：${data.data[i].commend}</span>
+                    </div>
+                  </div>`);
+                    $("#center").append(cell);
+                }
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        });
+    }
+
+
+    function loginBtns() {
+        $("#loginBtns").click(function () {
+
+        })
+    }
+
+
+</script>
+</body>
 </html>

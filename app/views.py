@@ -6,6 +6,9 @@ from app.models import User
 import time
 import datetime
 import json
+
+
+
 '''
 return index1.html
 '''
@@ -15,6 +18,9 @@ def index(request):
     print(request.session.get('status'))
     print(request.session.get('id'))
     return render(request, 'index/index.html') #返回主页面
+
+def loginPage(request):
+    return render(request,'index/index1.html')
 
 def home(request):
     if request.session.get('status'): #判断用户是否登录
@@ -258,10 +264,15 @@ def get_article_list_by_class(request):
     if request.method == "GET":
         class_name = request.GET.get('label')
         article_list =  models.Article.objects.filter(label=class_name).values_list('id','title','commend','time','article_user_name') #只取id和title，形成一个列表
+        print(len(list(article_list)))
+        if len(list(article_list)) == 0:
+            re = json.dumps({
+                "status": "0",
+                "data": ''
+            })
+            return HttpResponse(re, content_type="application/json,charset=utf8")
         lists = []
         print((article_list[0][3]).strftime("%Y-%m-%d %H:%M:%S"))
-        # print(datetime.datetime.strftime(""))
-
 
         for i in range(len(article_list)):
             obj = {}
